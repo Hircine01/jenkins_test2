@@ -1,5 +1,3 @@
 FROM alpine
-RUN apk add --no-cache curl wget busybox-extras netcat-openbsd python py-pip && \
-    pip install awscli
-RUN apk --purge -v del py-pip
+RUN apt-get update && apt-get install python3
 CMD tail -f /dev/null
