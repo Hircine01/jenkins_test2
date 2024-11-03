@@ -1,3 +1,3 @@
 FROM alpine
-RUN apt-get update && apt-get install python3
+RUN apt-get update
 CMD tail -f /dev/null
