@@ -1,3 +1,3 @@
 FROM alpine
-RUN apt-get update
+RUN apk add curl
 CMD tail -f /dev/null
